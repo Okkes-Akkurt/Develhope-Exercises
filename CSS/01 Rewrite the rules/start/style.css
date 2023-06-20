@@ -1,3 +1,5 @@
+/* 
+
 body {
     background-color: #011212;
 }
@@ -8,3 +10,37 @@ body {
     background-color: #ff8800;
     border-radius: 50px;
 }
+
+*/
+
+:root {
+    --primary-color: #011212;
+    --secondary-color: #ff8800;
+    --font-family: Arial, sans-serif;
+    --ball-size: 100px;
+    --border-radius: 50%;
+  }
+
+  body {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+  }
+
+  .ball {
+    width: var(--ball-size);
+    height: var(--ball-size);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+  }
+
+  h1, h2, ul, ol, li {
+    color: white;
+  }
+
+  ul, ol {
+    margin-left: 20px;
+  }
+
+  .recipe {
+    margin-bottom: 20px;
+  }
