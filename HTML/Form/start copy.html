@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Kayıt Formu</h2>
+
+    <form>
+
+      <label for="email">Email:</label>
+      <br/>
+      <input type="email" id="email" name="email" required />
+
+      <br/>
+      <br/>
+
+      <label for="password">Şifre:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      />
+
+      <br/>
+      <br/>
+
+      <label for="fullname">Ad ve Soyad:</label><br />
+      <input type="text" id="fullname" name="fullname" required />
+
+      <br/>
+      <br/>
+
+      <label for="birthdate">Doğum Tarihi:</label><br />
+      <input type="date" id="birthdate" name="birthdate" required />
+
+      <br/>
+      <br/>
+
+      <label for="phone">Telefon Numarası:</label><br />
+      <input type="tel" id="phone" name="phone" required />
+
+      <br/>
+      <br/>
+
+      <label for="plan">Plan Seçimi:</label><br />
+      <select id="plan" name="plan">
+        <option value="free">Ücretsiz Plan</option>
+        <option value="plan1">Plan 1</option>
+        <option value="plan2">Plan 2</option>
+        <option value="plan3">Plan 3</option>
+      </select>
+
+        <br/>
+        <br/>
+
+      <label for="pro">Pro Plan:</label>
+      <input type="checkbox" id="pro" name="pro" /><br /><br />
+
+      <label for="creditcard">Kredi Kartı Numarası:</label><br />
+      <input
+        type="text"
+        id="creditcard"
+        name="creditcard"
+        required
+      />
+
+      <br/>
+      <br/>
+
+      <label for="cvc">CVC:</label><br />
+      <input type="text" id="cvc" name="cvc" required />
+
+      <br/>
+      <br/>
+
+      <label for="expiration">Son Kullanma Tarihi:</label><br />
+      <input
+        type="text"
+        id="expiration"
+        name="expiration"
+        required
+      />
+
+      <br/>
+      <br/>
+
+      <label for="address">Fatura Adresi:</label><br />
+      <textarea id="address" name="address" required></textarea>
+
+      <br/>
+      <br/>
+
+      <input type="submit" value="Kaydet" />
+    </form>
+  </body>
+</html>
