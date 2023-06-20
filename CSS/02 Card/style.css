@@ -20,8 +20,7 @@ html{
     flex-direction: column;
     max-width: 300px;
     max-height: 100x;
-    border: 1px solid #A9A9A9;
-    
+    border: 1px solid #A9A9A9;  
 }
 
 .card img{
