@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: calc(0.0625rem) solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: calc(0.625rem);
+  font-size: calc(1rem);
+}
+div h1 {
+  padding-bottom: calc(0.125rem);
+  color: green;
+  border-bottom: calc(0.0625rem) solid green;
+}
+div section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: calc(1.25rem);
+}
+div section article {
+  max-width: 23%;
+  min-height: calc(8.125rem);
+  padding: calc(0.625rem) calc(1.875rem);
+  border: calc(0.0625rem) solid green;
+}
+div section article:nth-child(odd) {
+  color: blue;
+}
+div section article:nth-child(even) {
+  color: red;
+}
+div section:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: calc(1.25rem);
+  padding: 0 calc(3.75rem);
+}
+div section:last-child article {
+  border: calc(0.0625rem) solid blue;
+  color: green;
+  min-width: 100% !important;
+}
+
+/*# sourceMappingURL=style.css.map */

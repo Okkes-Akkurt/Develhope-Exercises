@@ -1,0 +1,71 @@
+@function rem($px) {
+  @return calc(#{$px / 16}rem);
+}
+
+
+$color-primary: red;
+$color-secondary:blue;
+$color-tertiary: green;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+    border: rem(1) solid $color-primary ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: rem(10);
+    font-size: rem(16);
+
+    h1{
+        padding-bottom: rem(2);
+        color: $color-tertiary;
+        border-bottom: rem(1) solid $color-tertiary;
+    }
+
+    section{
+        @include flex-center;
+        margin: rem(20);
+
+        article {
+            max-width: 23%;
+            min-height: rem(130);
+            padding: rem(10) rem(30);
+            border: rem(1) solid $color-tertiary;
+        }
+
+        article:nth-child(odd){
+            color: $color-secondary;
+        }
+
+         article:nth-child(even){
+            color: $color-primary;
+        }
+    }
+
+    section:last-child{
+        width: 100%;
+        @include flex-center;
+        justify-content: flex-start;
+        margin-top: 0;
+        margin-bottom: rem(20);
+        padding: 0 rem(60);
+
+        article{
+            border: rem(1) solid $color-secondary;
+            color: $color-tertiary;
+            min-width: 100% !important;
+        }
+    }
+}
