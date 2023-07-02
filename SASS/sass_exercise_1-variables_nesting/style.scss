@@ -1,0 +1,48 @@
+$color-primary: red;
+$color-secondary:blue;
+$color-tertiary: green;
+
+div{
+    border: 1px solid $color-primary ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+
+    h1{
+        padding-bottom: 10px;
+        color: $color-tertiary;
+        border-bottom: 1px solid $color-tertiary;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+
+        article {
+             width: 20%;
+            padding: 10px 20px;
+            border: 1px solid $color-tertiary;
+        }
+
+        article:nth-child(odd){
+            color: $color-secondary;
+        }
+
+         article:nth-child(even){
+            color: $color-primary;
+        }
+
+
+    }
+}
+.exercise {
+border: 1px solid $color-secondary;
+
+    .exercise-title {
+        color: $color-primary;
+    }
+}
