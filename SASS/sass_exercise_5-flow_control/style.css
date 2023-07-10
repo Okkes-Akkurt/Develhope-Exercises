@@ -64,118 +64,106 @@ div section:nth-child(4) div {
   height: calc(3.125rem);
 }
 div section:nth-child(4) .fs-1rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 }
 div section:nth-child(4) .fs-2rem {
-  font-size: 2rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 div section:nth-child(4) .fs-3rem {
-  font-size: 3rem;
-  justify-content: flex-start;
-  align-items: baseline;
-  background-color: #d5d5d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
-div section:nth-child(4) .fs-4rem {
-  font-size: 4rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #c8c8c8;
+div section:nth-child(4) div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
 }
-div section:nth-child(4) .fs-5rem {
-  font-size: 5rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #bbbbbb;
+div section:nth-child(4) div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
 }
-div section:nth-child(4) .fs-6rem {
-  font-size: 6rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #aeaeae;
+div section:nth-child(4) div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
 }
-div section:nth-child(4) .fs-7rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #a1a1a1;
+div section:nth-child(4) div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
 }
-div section:nth-child(4) .fs-8rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #949494;
+div section:nth-child(4) div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
 }
-div section:nth-child(4) .fs-9rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #878787;
+div section:nth-child(4) div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
 }
-div section:nth-child(4) .fs-10rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #7a7a7a;
+div section:nth-child(4) div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
 }
-div section:nth-child(4) .fs-11rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #6d6d6d;
+div section:nth-child(4) div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
 }
-div section:nth-child(4) .fs-12rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #606060;
+div section:nth-child(4) div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
 }
-div section:nth-child(4) .fs-13rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #535353;
+div section:nth-child(4) div:nth-child(10) {
+  background-color: gray;
+  color: gray;
 }
-div section:nth-child(4) .fs-14rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #464646;
+div section:nth-child(4) div:nth-child(10) {
+  background-color: blue;
+  color: red;
 }
-div section:nth-child(4) .fs-15rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #393939;
+div section:nth-child(4) div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
 }
-div section:nth-child(4) .fs-16rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #2c2c2c;
+div section:nth-child(4) div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
 }
-div section:nth-child(4) .fs-17rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #1f1f1f;
+div section:nth-child(4) div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
 }
-div section:nth-child(4) .fs-18rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #121212;
+div section:nth-child(4) div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
 }
-div section:nth-child(4) .fs-19rem {
-  font-size: 1rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #050505;
+div section:nth-child(4) div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+div section:nth-child(4) div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+div section:nth-child(4) div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+div section:nth-child(4) div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+div section:nth-child(4) div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+div section:nth-child(4) div:nth-child(20) {
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

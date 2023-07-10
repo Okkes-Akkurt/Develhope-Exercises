@@ -82,16 +82,34 @@ div{
             width: rem(50);
             height: rem(50);
         }
-        @for $i from 1 through 19 {
-        $color: if($i, darken(rgba(255 - 13*$i, 255 - 13*$i, 255 - 13*$i, 1), 1), lighten(rgba(255 - 13*$i, 255 - 13*$i, 255 - 13*$i, 1), 1));
-        $font-size: if($i <= 6, $i * 1rem, 1rem);
+         .fs-1rem {
+            @include flex-center();
+            font-size: 15px;
+        }
 
-            .fs-#{$i}rem {
-                font-size: $font-size;
-                justify-content: if($i <= 6, flex-start,flex-start);
-                align-items: if($i == 3, baseline, flex-start);
-                background-color: $color;
-            }
+        .fs-2rem {
+            @include flex-center();
+            font-size: 30px;
+        }
+
+        .fs-3rem {
+            @include flex-center();
+            font-size: 40px;
+        }
+
+
+        @for $i from 1 through 20 {
+        div:nth-child(#{$i}) {
+        background-color: darken(white, $i * 5);
+        color: lighten(black, 5 * $i);
+        }
+
+        @if $i ==10 {
+        div:nth-child(#{$i}) {
+            background-color: $color-secondary;
+            color: $color-primary;
         }
     }
+    }
+}
 }
