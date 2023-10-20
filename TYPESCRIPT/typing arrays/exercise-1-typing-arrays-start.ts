@@ -6,22 +6,22 @@
 // Use the array literal type syntax: type[]
 // Hint: Look at the type that TypeScript has inferred.
 
-const currencies1 = ["NZD", "THB", "NGN"];
+const currencies1: string[] = ['NZD', 'THB', 'NGN'];
 
 // Add a type annotation for this array.
 // Use the generic interface type `Array`: Array<type>
 
-const currencies2 = ["EUR", "COP", "INR"];
+const currencies2: Array<string> = ['EUR', 'COP', 'INR'];
 
 // Add a type annotation for this array.
 // Use the array literal type syntax: type[]
 
-const populations1 = [50_372_424, 1_352_642_280, 211_400_708];
+const populations1: number[] = [50_372_424, 1_352_642_280, 211_400_708];
 
 // Add a type annotation for this array.
 // Use the generic interface type `Array`: Array<type>
 
-const populations2 = [5_135_300, 331_893_745, 1_412_600_000];
+const populations2: Array<number> = [5_135_300, 331_893_745, 1_412_600_000];
 
 // ----
 
@@ -30,24 +30,24 @@ const populations2 = [5_135_300, 331_893_745, 1_412_600_000];
 // they are correct.
 
 interface Country {
-    name: never;
+    name: string; // Change "never" to "string"
     code: string;
-    population: never;
+    population: number; // Change "never" to "number"
 }
 
 // Add a type annotation for this array of objects.
 // Use the array literal type syntax: Type[]
 // Hint: Make use of the `Country` type.
 
-const countries1 = [
+const countries1: Country[] = [
     {
-        name: "China",
-        code: "CN",
+        name: 'China',
+        code: 'CN',
         population: 1_412_600_000,
     },
     {
-        name: "Italy",
-        code: "IT",
+        name: 'Italy',
+        code: 'IT',
         population: 60_317_116,
     },
 ];
@@ -56,15 +56,15 @@ const countries1 = [
 // Use the generic interface type `Array`: Array<type>
 // Hint: Make use of the `Country` type.
 
-const countries2 = [
+const countries2: Array<Country> = [
     {
-        name: "Thailand",
-        code: "TH",
+        name: 'Thailand',
+        code: 'TH',
         population: 69_950_850,
     },
     {
-        name: "Greece",
-        code: "GR",
+        name: 'Greece',
+        code: 'GR',
         population: 10_678_632,
     },
 ];
